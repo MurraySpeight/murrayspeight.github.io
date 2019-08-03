@@ -5,9 +5,3 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-nav > a > img {
-  width: 100%;
-}
-.navbar-brand {
-  width: 15%;
-}

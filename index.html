@@ -14,12 +14,8 @@
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-      function onSubmit(token) {
-        document.getElementById("enquiry-form").submit();
-      }
-    </script>
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script>-->
   </head>
 
   <body>
@@ -41,29 +37,20 @@
 
     <main role="main" class="container">
       <div class="starter-template">
-        <h1>Make an enquiry</h1>
-        <form id="enquiry-form">
-          <div class="form-group">
-            <label for="fullname">Your name</label>
-            <input type="text" class="form-control" id="fullname">
-          </div>
-          <div class="form-group">
-            <label for="description">Enquiry description</label>
-              <textarea class="form-control" id="description" rows="5"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary g-recaptcha"
-                  data-sitekey="6Lfpm9kZAAAAAPt0XLRCgHFU7pEUNV2HrTdizhmd" data-callback='onSubmit' data-action='submit'>Submit</button>
-        </form>
+        <div id="enquiry_form_container"></div><!-- React component-->
       </div>
-    </main><!-- /.container -->
+    </main>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- React core JavaScript -->
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Load React components -->
+    <script src="enquiry_form.js" type="text/babel"></script>
   </body>
 </html>
 

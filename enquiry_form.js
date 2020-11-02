@@ -32,32 +32,36 @@ class EnquiryForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <div className="form-group">
-                    <label>
-                        Name:
-                        <input name="fullname" type="text" value={this.state.fullname}
-                               onChange={this.handleInputChange} className="form-control"/>
-                    </label>
-                </div>
-                <div className="form-group">
-                    <label>
-                        Email:
-                        <input name="email" type="text" value={this.state.email}
-                               onChange={this.handleInputChange} className="form-control"/>
-                    </label>
-                </div>
-                <div className="form-group">
-                    <label>
-                        Enquiry description:
-                        <textarea name="description" value={this.state.description} onChange={this.handleInputChange}
-                                  className="form-control" rows="5"/>
-                    </label>
-                </div>
-                <input type="submit" value="Submit" className="btn btn-primary g-recaptcha"
-                       data-sitekey="6Lfpm9kZAAAAAPt0XLRCgHFU7pEUNV2HrTdizhmd" data-callback='onSubmit'
-                       data-action='submit'/>
-            </form>
+            <div>
+                <h1>Make an enquiry</h1>
+                <form onSubmit={this.handleSubmit}>
+                    <div className="form-group">
+                        <label>
+                            Name:
+                            <input name="fullname" type="text" value={this.state.fullname}
+                                   onChange={this.handleInputChange} className="form-control"/>
+                        </label>
+                    </div>
+                    <div className="form-group">
+                        <label>
+                            Email:
+                            <input name="email" type="text" value={this.state.email}
+                                   onChange={this.handleInputChange} className="form-control"/>
+                        </label>
+                    </div>
+                    <div className="form-group">
+                        <label>
+                            Enquiry description:
+                            <textarea name="description" value={this.state.description}
+                                      onChange={this.handleInputChange}
+                                      className="form-control" rows="5"/>
+                        </label>
+                    </div>
+                    <input type="submit" value="Submit" className="btn btn-primary g-recaptcha"
+                           data-sitekey="6Lfpm9kZAAAAAPt0XLRCgHFU7pEUNV2HrTdizhmd" data-callback='onSubmit'
+                           data-action='submit'/>
+                </form>
+            </div>
         );
     }
 

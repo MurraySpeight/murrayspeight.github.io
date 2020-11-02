@@ -36,21 +36,21 @@ class EnquiryForm extends React.Component {
                 <h1>Make an enquiry</h1>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <label>
+                        <label htmlFor="fullname">
                             Name:
                             <input name="fullname" type="text" value={this.state.fullname}
                                    onChange={this.handleInputChange} className="form-control"/>
                         </label>
                     </div>
                     <div className="form-group">
-                        <label>
+                        <label htmlFor="email">
                             Email:
                             <input name="email" type="text" value={this.state.email}
                                    onChange={this.handleInputChange} className="form-control"/>
                         </label>
                     </div>
                     <div className="form-group">
-                        <label>
+                        <label htmlFor="description">
                             Enquiry description:
                             <textarea name="description" value={this.state.description}
                                       onChange={this.handleInputChange}

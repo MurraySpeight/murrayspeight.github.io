@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Github",
+    "link": "https://github.com/murrayspeight",
+    "image": "images/social/github.svg"
+  },
+  {
+      "name": "Email",
+      "link": "mailto:murray@speight.digital",
+      "image": "images/social/email.svg"
+  }
+
+]

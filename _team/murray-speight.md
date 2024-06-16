@@ -7,5 +7,3 @@ linkedinurl: "https://www.linkedin.com/in/mspeight/"
 promoted: true
 weight: 1
 ---
-
-

@@ -1,15 +1,15 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "Data Engineering",
+    "description": "By applying proven engineering principles to data design, usage and sharing, we help you harness data as a powerful product — and use it to drive innovation and empower strategic decision-making.",
     "image": {
-      "url": "images/features/noun_branding_1885335.svg",
+      "url": "images/features/noun-data-warehouse-6170614.svg",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Software Engineers",
+    "title": "Software Engineering",
     "description": "",
     "image": {
       "url": "images/features/noun_The Process_1885341.svg",
@@ -18,10 +18,10 @@
     }
   },
   {
-    "title": "Certified",
-    "description": "We stay up to date on the latest changes in cloud computing",
+    "title": "Cloud Engineering",
+    "description": "We help you build, modernize, and migrate to cost-efficient cloud solutions that deliver sustained competitive advantage and generate business value long into the future.",
     "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
+      "url": "images/features/noun-cloud-engineering-4598599.svg",
       "width": 80,
       "height": 80
     }
